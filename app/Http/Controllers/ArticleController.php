@@ -11,15 +11,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+        $response = ['message' =>  'indexfunction'];
+        return response($response, 200);
     }
 
     /**
@@ -27,7 +20,8 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $response = ['message' =>  'store function'];
+        return response($response, 200);
     }
 
     /**
@@ -35,15 +29,8 @@ class ArticleController extends Controller
      */
     public function show(string $id)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
+        $response = ['message' =>  'show function'];
+        return response($response, 200);
     }
 
     /**
@@ -51,7 +38,8 @@ class ArticleController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $response = ['message' =>  'update function'];
+        return response($response, 200);
     }
 
     /**
@@ -59,6 +47,7 @@ class ArticleController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $response = ['message' =>  'destroy function'];
+        return response($response, 200);
     }
 }
